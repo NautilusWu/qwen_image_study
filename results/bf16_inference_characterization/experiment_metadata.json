@@ -1,0 +1,43 @@
+{
+  "experiment_configuration": {
+    "model_id": "Qwen/Qwen-Image",
+    "prompt": "A red sports car parked on a quiet city street at sunset, with realistic lighting, detailed buildings, and reflections on the wet pavement.",
+    "width": 1024,
+    "height": 1024,
+    "num_inference_steps": 50,
+    "seed": 42,
+    "true_cfg_scale": 1.0,
+    "negative_prompt": null,
+    "baseline_runs": 3,
+    "warmup_steps": 5,
+    "output_dir": "/outputs/qwen_image_bf16_inference_characterization"
+  },
+  "precision": "torch.bfloat16",
+  "model_load_time_s": 277.05763307499,
+  "pipeline_components": {
+    "pipeline": "QwenImagePipeline",
+    "tokenizer": "Qwen2Tokenizer",
+    "text_encoder": "Qwen2_5_VLForConditionalGeneration",
+    "transformer": "QwenImageTransformer2DModel",
+    "vae": "AutoencoderKLQwenImage",
+    "scheduler": "FlowMatchEulerDiscreteScheduler"
+  },
+  "scheduler_configuration": {
+    "num_train_timesteps": 1000,
+    "shift": 1.0,
+    "use_dynamic_shifting": true,
+    "base_shift": 0.5,
+    "max_shift": 0.9,
+    "base_image_seq_len": 256,
+    "max_image_seq_len": 8192,
+    "invert_sigmas": false,
+    "shift_terminal": 0.02,
+    "use_karras_sigmas": false,
+    "use_exponential_sigmas": false,
+    "use_beta_sigmas": false,
+    "time_shift_type": "exponential",
+    "stochastic_sampling": false,
+    "_class_name": "FlowMatchEulerDiscreteScheduler",
+    "_diffusers_version": "0.34.0.dev0"
+  }
+}

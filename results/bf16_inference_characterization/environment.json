@@ -1,0 +1,35 @@
+{
+  "system": {
+    "hostname": "2bf47d262fa9",
+    "operating_system": "Linux-6.17.0-1031-nvidia-aarch64-with-glibc2.39",
+    "architecture": "aarch64"
+  },
+  "python": {
+    "version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "executable": "/usr/bin/python"
+  },
+  "pytorch_cuda": {
+    "pytorch_version": "2.13.0a0+9186a08b2c.nv26.07",
+    "cuda_runtime": "13.3",
+    "cuda_available": true,
+    "cudnn_version": 92400,
+    "tf32_matmul_allowed": true
+  },
+  "gpu": {
+    "device_index": 0,
+    "name": "NVIDIA GB10",
+    "compute_capability": [
+      12,
+      1
+    ],
+    "cuda_visible_memory_gib": 121.6893424987793,
+    "bf16_supported": true,
+    "nvidia_smi": "NVIDIA GB10, 580.173.02"
+  },
+  "python_libraries": {
+    "diffusers": "0.40.0",
+    "transformers": "5.15.1",
+    "accelerate": "1.14.0",
+    "huggingface_hub": "1.29.0"
+  }
+}

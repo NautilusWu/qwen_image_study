@@ -1,0 +1,12 @@
+{
+  "prompt_encoding_total_s": 0.09257490301388316,
+  "tokenizer": {
+    "calls": 1,
+    "time_s": 0.00035667401971295476
+  },
+  "text_encoder": {
+    "calls": 1,
+    "time_s": 0.0916489940136671
+  },
+  "other_prompt_encoding_s": 0.0005692349805030972
+}

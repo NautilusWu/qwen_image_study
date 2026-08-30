@@ -1,0 +1,31 @@
+{
+  "clean_baseline": {
+    "number_of_runs": 3,
+    "mean_latency_s": 85.13723623767146,
+    "std_latency_s": 2.891221754739975
+  },
+  "instrumented_run": {
+    "total_latency_s": 82.20462608497473,
+    "transformer": {
+      "calls": 50,
+      "total_time_s": 81.42913107899949,
+      "average_time_per_call_s": 1.62858262157999,
+      "percentage_of_instrumented_runtime": 99.05662850996535
+    },
+    "scheduler": {
+      "calls": 50,
+      "total_time_s": 0.00319934292929247,
+      "average_time_per_call_s": 6.398685858584941e-05
+    },
+    "prompt_encoding_time_s": 0.09257490301388316,
+    "vae_decode_time_s": 0.6492521369946189,
+    "image_postprocessing_time_s": 0.01711642398731783
+  },
+  "model_initialization": {
+    "model_load_time_s": 277.05763307499
+  },
+  "warmup": {
+    "steps": 5,
+    "time_s": 10.111011986009544
+  }
+}
