@@ -1,0 +1,35 @@
+{
+  "experiment": "Qwen-Image vLLM-Omni BF16 Single-Request Baseline",
+  "model": "Qwen/Qwen-Image",
+  "prompt": "A red sports car parked on a quiet city street at sunset, with realistic lighting, detailed buildings, and reflections on the wet pavement.",
+  "backend": "vLLM-Omni",
+  "precision": "BF16",
+  "width": 1024,
+  "height": 1024,
+  "num_inference_steps": 50,
+  "seed": 42,
+  "true_cfg_scale": 1.0,
+  "cfg_enabled": false,
+  "images_per_request": 1,
+  "server_max_num_seqs": 1,
+  "client_concurrency": 1,
+  "warmup_runs": 1,
+  "measured_runs": 5,
+  "wall_latency_s": {
+    "mean": 64.5816427499999,
+    "median": 64.5246391439996,
+    "std": 0.2405674106906544,
+    "min": 64.30647726799998,
+    "max": 64.9388961730001
+  },
+  "stage_0_generation_s": {
+    "mean": 64.50743789672852,
+    "median": 64.45141768455505,
+    "std": 0.23893506791287342,
+    "min": 64.23429465293884,
+    "max": 64.86160254478455
+  },
+  "peak_memory_mb": {
+    "max": 58886.0
+  }
+}

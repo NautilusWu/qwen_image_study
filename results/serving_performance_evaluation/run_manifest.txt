@@ -1,0 +1,27 @@
+Qwen-Image vLLM-Omni Sections 1–4 Master Run
+
+Timestamp: 20260831_151134
+Project: /workspace/qwen-image
+Model: Qwen/Qwen-Image
+Server: 127.0.0.1:8091
+
+Experiments:
+Section 1  BF16 Single-Request Baseline
+Section 2  Inference-Step Scaling
+Section 3  True CFG Scaling
+Section 4A Serial Serving
+Section 4B Request-Level Batching
+Section 4C Step-Wise Continuous Batching
+
+Section 4 fixed workload:
+Resolution: 1024x1024
+Inference steps: 20
+True CFG scale: 1.0
+Measured requests per concurrency level: 24
+Concurrency levels: 1, 2, 4, 8
+Measured seeds: 42..65
+
+Server modes:
+A: --max-num-seqs 1
+B: --max-num-seqs 8 --request-batch-max-wait-ms 20
+C: --step-execution --max-num-seqs 8

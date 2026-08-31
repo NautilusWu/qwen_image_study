@@ -1,0 +1,25 @@
+{
+  "experiment": "Qwen-Image vLLM-Omni True-CFG Scale Sweep",
+  "model": "Qwen/Qwen-Image",
+  "backend": "vLLM-Omni",
+  "precision": "BF16",
+  "prompt": "A red sports car parked on a quiet city street at sunset, with realistic lighting, detailed buildings, and reflections on the wet pavement.",
+  "negative_prompt": "blurry, low quality, distorted, deformed, artifacts",
+  "width": 1024,
+  "height": 1024,
+  "num_inference_steps": 50,
+  "seed": 42,
+  "guidance_scale": 1.0,
+  "true_cfg_scales": [
+    1.0,
+    2.0,
+    4.0,
+    6.0
+  ],
+  "images_per_request": 1,
+  "server_max_num_seqs": 1,
+  "client_concurrency": 1,
+  "warmup_runs_per_scale": 1,
+  "measured_runs_per_scale": 5,
+  "experiment_order_seed": 20260830
+}

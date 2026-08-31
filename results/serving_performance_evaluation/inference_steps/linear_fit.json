@@ -1,0 +1,13 @@
+{
+  "model": "T(N) = intercept + slope * N",
+  "wall_latency": {
+    "slope_s_per_step": 1.2730886532720012,
+    "intercept_s": 0.8294296363199365,
+    "r_squared": 0.9999951734299065
+  },
+  "stage_0_generation": {
+    "slope_s_per_step": 1.273019986152649,
+    "intercept_s": 0.7600475120544345,
+    "r_squared": 0.9999953016188233
+  }
+}

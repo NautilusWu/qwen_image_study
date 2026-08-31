@@ -1,0 +1,31 @@
+{
+  "experiment": "Qwen-Image vLLM-Omni Concurrency Benchmark",
+  "server_mode": "serial",
+  "expected_server_configuration": {
+    "expected_max_num_seqs": 1,
+    "expected_step_execution": false,
+    "expected_request_batch_max_wait_ms": 0
+  },
+  "model": "Qwen/Qwen-Image",
+  "backend": "vLLM-Omni",
+  "precision": "BF16",
+  "prompt": "A red sports car parked on a quiet city street at sunset, with realistic lighting, detailed buildings, and reflections on the wet pavement.",
+  "width": 1024,
+  "height": 1024,
+  "num_inference_steps": 20,
+  "true_cfg_scale": 1.0,
+  "cfg_enabled": false,
+  "images_per_request": 1,
+  "concurrency_levels": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "measured_requests_per_level": 24,
+  "base_seed": 42,
+  "measured_seed_start": 42,
+  "measured_seed_end": 65,
+  "same_workloads_across_levels": true,
+  "same_workloads_across_server_modes": true
+}
